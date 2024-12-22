@@ -1,0 +1,54 @@
+:root {
+    --btn-header-bg-active-color: #666CA3;
+    --title-color: #13183F;
+    --text-color: #83869A;
+    --hyperlink-color: #F74780;
+    --hyperlink-active-color: #FFA7C3;
+    --main-gradient: linear-gradient(#FF6F48, #F02AA6);
+    --footer-gradient: linear-gradient(#4851FF, #F02AA6);
+    --bg-gradient: linear-gradient(#FFFFFF, #F0F1FF);
+    --card-shadow: 0 25px 50px rgba(6, 22, 141, 0.05);
+  }
+
+  .course-card{
+    background-color: white;
+    box-shadow:var(--card-shadow);
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    transition: .5s;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover{
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(6, 22, 141, 0.1);
+    }
+
+    .course-image{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .course-content{
+
+        display: flex;
+        flex-direction: column;
+        
+        h3{
+            font-size: 18px;
+            color: var(--title-color);
+            text-decoration: underline;
+        }
+    
+        p{
+            font-size: 14px;
+            color: var(--text-color);
+            font-style: italic;
+        }
+
+    }
+  
+}

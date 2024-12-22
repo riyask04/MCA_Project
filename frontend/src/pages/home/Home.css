@@ -1,0 +1,119 @@
+:root {
+    --btn-header-bg-active-color: #666CA3;
+    --title-color: #13183F;
+    --text-color: #83869A;
+    --hyperlink-color: #F74780;
+    --hyperlink-active-color: #FFA7C3;
+    --main-gradient: linear-gradient(#FF6F48, #F02AA6);
+    --footer-gradient: linear-gradient(#4851FF, #F02AA6);
+    --bg-gradient: linear-gradient(#FFFFFF, #F0F1FF);
+    --card-shadow: 0 25px 50px rgba(6, 22, 141, 0.05);
+  }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .content-box{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 150px;
+    margin-bottom: 40px;
+  }
+  
+  .content-box h1 {
+    color: var(--title-color);
+    font-size: 2.5rem;
+    font-weight: 800;
+    width: 50%;
+  }
+  
+  .content-box p {
+    color: var(--text-color);
+    line-height: 1.625rem;
+    margin-top: -10px;
+    width: 80%;
+  }
+  
+  .content-box #btn-main {
+    background-image: var(--main-gradient);
+    border: none;
+    border-radius: 31.5px;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 2.375rem;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .main img{
+  width: 40%;
+  margin-right: 40px;
+  }
+  
+
+  #grid-section {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+  
+  #check-out-card {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 24px;
+    margin-top: -20px;
+  }
+  
+  #grid-section #check-out-card h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2rem;
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+    padding: 3.5rem 1.75rem 2rem 1.75rem;
+    position: relative;
+  }
+  
+  .service-card .service-icon {
+    left: 1.75rem;
+    position: absolute;
+    top: -23px;
+  }
+  
+  .service-card h3 {
+    color: var(--title-color);
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+  
+  .service-card p {
+    color: var(--text-color);
+    line-height: 1.625rem;
+    padding: 1rem 0 1.5rem 0;
+  }
+  
+  .service-card a {
+    color: var(--hyperlink-color);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .service-card a:hover {
+    color: var(--hyperlink-active-color);
+  }

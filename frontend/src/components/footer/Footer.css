@@ -1,0 +1,10 @@
+.footer-content {
+    background-color: var(--title-color);
+    padding: 14px;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

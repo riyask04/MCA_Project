@@ -1,0 +1,60 @@
+.add-lecture {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 60px auto;
+    margin-bottom: 120px;
+}
+
+.add-lecture h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.add-lecture form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-lecture input,
+.add-lecture textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.add-lecture input[type="file"] {
+    border: none;
+}
+
+.add-lecture textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.add-lecture button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+}
+
+.add-lecture button:hover {
+    background-color: #0056b3;
+}
+
+.add-lecture button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
